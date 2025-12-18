@@ -6,34 +6,53 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>SunCafe🌞</title>
 </head>
 
-<body>
+<body class="bg-darkbg">
   <header class="h-dvh p-10 min-h-screen bg-[url('..//assests/herobanner.jpg')] bg-cover bg-center bg-no-repeat min-[2000px]:p-20 ">
     <nav class="flex justify-between items-center text-golden p-5 rounded-4xl sticky top-0   border border-white/10">
       <div class="text-3xl font-semibold">SunCafe</div>
-      <div class="flex space-x-16 font-semibold max-sm:hidden    ">
+      <div class="flex space-x-16 font-semibold max-sm:hidden ">
         <a href="#about">AboutUS</a>
         <a href="#">Menu</a>
         <a href="#">Visit Us</a>
       </div>
-      <button class="bg-golden text-textdark rounded-full px-2.5 py-1"> Order Now!</button>
+      <div class="md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- <button class="bg-golden text-textdark rounded-full px-2.5 py-1"> Order Now!</button> -->
     </nav>
     <div class="text-white text-center bg-black/10 mt-40    w-full   ">
       <h1 class="text-6xl max-md:text-4xl 2xl:text-8xl   font-semibold  tracking-wide p-5 ">Start Your Day With <span
           class="block pt-2.5"> Strong Caffine </span></h1>
-      <p class="text-xl  pt-10 text-white/80 ">All We Need is Coffee</p>
+      <p class="text-xl  pt-10 text-white ">All We Need is Coffee !</p>
     </div>
+    
 
   </header>
   <section class="lg:h-fit bg-darkbg text-textoff pb-0 p-10" id="about">
     <h2 class="text-center text-4xl font-bold">About Us</h2>
-    <div class="flex items-center justify-end h-fit max-lg:flex-col gap-5 py-10 min-[2000px]:p-20">
-      <div class="h-[700px]   flex-1">
+    <div class="grid grid-cols-3 max-md:grid-cols-1 py-5">
+      <div class="w-80 h-80 mx-auto">
+        <img src="./assests/about.jpeg"  class="rounded-4xl" alt="">
+      </div>
+      <div class="flex flex-col justify-center col-span-2 p-5">
+        <span class="italic text-lg font-extralight text-center">Great coffee is our passion and we want to serve it with you ! </span>
+        <p class="text-3xl pt-2 line-clamp-4">It's been 2years since we started
+          SunCafe with passion for real Caffine.we choosen carefully a imported coffee beans sourced from trusted farms
+          so we make sure every cup delivers rich flavor and consistent quality.Our passion made our coffee to more
+          speacial.First we started on small shop with good ambient and mainly focusing on serve quality coffee.Within a
+          year the support and postive feedbacks from our customers motivated us to grow.From your trust and engagement
+          </p>
+      </div>
+    </div>
+    <!-- <div class="flex items-center justify-end h-fit max-lg:flex-col space-x-44 gap-5 py-10 min-[2000px]:p-20">
+      <div class="h-96 w-full ">
         <img src="./assests/about.jpeg" alt="" class="border border-amber-50/50 rounded-2xl h-full object-cover w-full">
       </div>
-      <div class=" flex items-center lg:flex-1 ">
+      <div class=" flex items-center ">
         <p class="max-md:text-lg text-2xl tracking-wide font-light lg:text-justify">It's been 2years since we started
           SunCafe with passion for real Caffine.we choosen carefully a imported coffee beans sourced from trusted farms
           so we make sure every cup delivers rich flavor and consistent quality.Our passion made our coffee to more
@@ -43,50 +62,87 @@
           <span class="italic font-extralight">Great coffee is our passion and we want to serve it with you </span>
         </p>
       </div>
+    </div> -->
+  </section>
+  <section class=" bg-darkbg p-10 topsells">
+    <h1 class="text-4xl text-center text-textoff font-bold py-5">Top Sellers</h1>
+    <div class="cards relative flex justify-center py-10 flex-wrap gap-5 bg-darkbg/50 backdrop-blur-sm rounded-4xl ">
+      <div class="group relative w-72 rounded-2xl overflow-hidden bg-darkbg border border-amber-50/90">
+        <img src="./assests/card1.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+            <div class="text-center text-textoff">
+              <p class="text-sm text-textmuted mb-4">Smooth espresso blended with steamed milk and light foam.</p>
+              <button class="bg-golden text-darkbg px-4 py-2 rounded-lg text-sm font-semibold hover:brightness-110 transition hover:cursor-pointer">Order Now
+              </button>
+            </div>
+          </div>
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-textoff">Classic Latte</h3>
+        </div>
+      </div>
+      <div class="group relative w-72 rounded-2xl overflow-hidden bg-darkbg border border-amber-50/50">
+        <img src="./assests/card2.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+            <div class="text-center text-textoff">
+              <p class="text-sm text-textmuted mb-4">Smooth refreshing coffee blended with cold milk and creame.</p>
+              <button class="bg-golden cursor-pointer text-darkbg px-4 py-2 rounded-lg text-sm font-semibold hover:brightness-110 transition">Order Now
+              </button>
+            </div>
+          </div>
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-textoff">Cold Coffee</h3>
+        </div>
+      </div>
+      <div class="group relative w-72 rounded-2xl overflow-hidden bg-darkbg border border-amber-50/50">
+        <img src="./assests/card3.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+            <div class="text-center text-textoff">
+              <p class="text-sm text-textmuted mb-4">Mocha sauce and Frappuccino chips blended with with Frappu.</p>
+              <button class="bg-golden text-darkbg px-4 py-2 rounded-lg text-sm font-semibold hover:brightness-110 transition">Order Now
+              </button>
+            </div>
+          </div>
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-textoff text-center">Java Chip Frappuccino</h3>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="pb-52 bg-darkbg p-10 topsells">
-    <h1 class="text-4xl text-center text-textoff font-bold ">Top Sellers</h1>
-    <div class="cards relative flex justify-center py-10 flex-wrap gap-5 ">
-      <div class="group relative w-72 rounded-2xl overflow-hidden bg-darkbg border border-amber-50/50">
-        <img src="./assests/card1.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
-            <div class="text-center text-textoff">
-              <p class="text-sm text-textmuted mb-4">Smooth espresso blended with steamed milk and light foam.</p>
-              <button class="bg-golden text-darkbg px-4 py-2 rounded-lg text-sm font-semibold hover:brightness-110 transition">Order Now
-              </button>
-            </div>
-          </div>
+  <section class="bg-golden/80 py-5">
+    <h2 class="text-4xl font-bold text-center">Our Menu</h2>
+    <div class="mx-auto items-center flex-col flex justify-center py-10 relative">
+      <ul class="flex flex-wrap gap-5 justify-center">
+        <li><a class="bg-darkbg hover:bg-darkbg/80 text-white p-2 rounded-full px-4 font-semibold" href="#">Espresso</a></li>
+        <li><a class="bg-darkbg text-white hover:bg-darkbg/80 p-2 rounded-full px-4 font-semibold" href="#">Americano</a></li>
+        <li><a class="bg-darkbg text-white hover:bg-darkbg/80 p-2 rounded-full px-4 font-semibold" href="#">Cappuccino</a></li>
+        <li><a class="bg-darkbg text-white hover:bg-darkbg/80 p-2 rounded-full px-4 font-semibold" href="#">Latte</a></li>
+        <li><a class="bg-darkbg text-white hover:bg-darkbg/80 p-2 rounded-full px-4 font-semibold" href="#">Cold Coffee</a></li>
+        <li><a class="bg-darkbg text-white hover:bg-darkbg/80 p-2 rounded-full px-4 font-semibold" href="#">Shakes</a></li>
+        <li><a class="bg-darkbg text-white hover:bg-darkbg/80 p-2 rounded-full px-4 font-semibold" href="#">Bakes</a></li>
+      </ul>
+      <div class="mt-5 p-5 cards relative z-50 flex justify-center py-10 flex-wrap gap-5 bg-darkbg/50 backdrop-blur-sm rounded-4xl ">
+      <div class=" relative w-72 rounded-2xl overflow-hidden bg-darkbg hover:bg-darkbg/50 border border-amber-50/90">
+        <img src="./assests/menu3.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 hover:scale-105" />
         <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-textoff">Classic Latte</h3>
+          <h3 class="text-lg font-semibold text-textoff">Mocha </h3>
+           <span class="text-white">Price ₹220</span>
         </div>
       </div>
-      <div class="group relative w-72 rounded-2xl overflow-hidden bg-darkbg border border-amber-50/50">
-        <img src="./assests/card1.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
-            <div class="text-center text-textoff">
-              <p class="text-sm text-textmuted mb-4">Smooth espresso blended with steamed milk and light foam.</p>
-              <button class="bg-golden text-darkbg px-4 py-2 rounded-lg text-sm font-semibold hover:brightness-110 transition">Order Now
-              </button>
-            </div>
-          </div>
+      <div class=" relative w-72 rounded-2xl overflow-hidden bg-darkbg hover:bg-darkbg/50 border border-amber-50/90">
+        <img src="./assests/menu1.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 hover:scale-105" />
         <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-textoff">Classic Latte</h3>
+          <h3 class="text-lg font-semibold text-textoff">Classic Latte </h3>
+           <span class="text-white">Price ₹200</span>
         </div>
       </div>
-      <div class="group relative w-72 rounded-2xl overflow-hidden bg-darkbg border border-amber-50/50">
-        <img src="./assests/card1.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
-            <div class="text-center text-textoff">
-              <p class="text-sm text-textmuted mb-4">Smooth espresso blended with steamed milk and light foam.</p>
-              <button class="bg-golden text-darkbg px-4 py-2 rounded-lg text-sm font-semibold hover:brightness-110 transition">Order Now
-              </button>
-            </div>
-          </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-textoff">Classic Latte</h3>
+      <div class=" relative w-72 rounded-2xl overflow-hidden bg-darkbg hover:bg-darkbg/50 border border-amber-50/90">
+        <img src="./assests/menu2.jpeg" alt="Latte" class="h-56 w-full object-cover transition-transform duration-500 hover:scale-105" />
+        <div class="p-4 text-center ">
+          <h3 class="text-lg font-semibold text-textoff">Classic Hot coffee </h3>
+           <span class="text-white">Price ₹100</span>
         </div>
-      </div>
+      </div>      
+    </div>
     </div>
   </section>
   <footer class="bg-black">
