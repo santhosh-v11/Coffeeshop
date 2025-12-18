@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --color-darkbg: #1C1410;
+  --color-cardsbg: #281d17;
+  --color-golden:#D4A373;
+  --color-textoff:#EAE0D5;
+  --color-textmuted: #A9927D;
+  --color-textdark:#0F0A08;
+}
+
+*{
+   font-family: "Playfair Display", serif;
+   scroll-behavior: smooth;
+}
+nav{
+  background-color: rgb(15, 10, 8,0.7);
+  }
