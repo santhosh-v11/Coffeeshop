@@ -17,4 +17,7 @@
 }
 nav{
   background-color: rgb(15, 10, 8,0.7);
-  }
+}
+.topsells{
+  background-image: url(../assests/bg_img_nuts.png);
+}
