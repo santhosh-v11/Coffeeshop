@@ -6,6 +6,7 @@
   --color-darkbg: #1C1410;
   --color-cardsbg: #281d17;
   --color-golden:#D4A373;
+  --color-creame:#D9B99B;
   --color-textoff:#EAE0D5;
   --color-textmuted: #A9927D;
   --color-textdark:#0F0A08;
@@ -22,4 +23,11 @@ nav{
 }
 .topsells{
   background-image: url(../assests/bg_img_nuts.png);
+}
+.location{
+  background: url(../assests/bg_img_nuts.png);
+  background-color: #D4A373;
+  background-position: right;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }
